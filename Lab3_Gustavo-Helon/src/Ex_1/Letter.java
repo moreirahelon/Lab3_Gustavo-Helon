@@ -1,17 +1,15 @@
 package Ex_1;
 
 public class Letter {
-	private String header = "";
-	private String body = "";
-	private String conclusion = "";
-	private String signature = "";
+	String header = "";
+	String body = "";
+	String conclusion = "";
+	String signature = "";
 	
 	public Letter() {}
 	
 	public String model() {
-		return "-------------------------------\n" + 
-	             header + body + conclusion + signature +
-	             "\n-------------------------------\n";
+		return header + body + conclusion + signature;
 	}	
 	
 	public void setHeader(String header) {
